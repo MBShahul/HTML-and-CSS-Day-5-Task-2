@@ -1,0 +1,46 @@
+.topText {
+    text-align: center;
+    border: 2px solid black;
+    margin: 0 100px;
+}
+
+.container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contain {
+    width: 300px;
+    border: 2px solid black;
+        padding: 10px;
+    text-align: center;
+}
+
+.heading {
+    margin-top: 0;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.spanFlex {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.spanFlex span {
+    font-size: larger;
+}
+
+.btn {
+    padding: 0;
+}
