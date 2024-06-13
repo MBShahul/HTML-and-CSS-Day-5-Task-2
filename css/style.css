@@ -1,35 +1,73 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #ffffff; 
+    --accent-color: #ff9800; 
+    --text-color: #333333; 
+    --bg-color: #f0f0f0; 
+    --heading-color: #3f51b5; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 20px;
+}
+
 .topText {
     text-align: center;
-    border: 2px solid black;
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     margin: 0 100px;
+    padding: 20px;
+    border-radius: 10px;
 }
+
 
 .container {
     margin-top: 50px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
 .contain {
     width: 300px;
-    border: 2px solid black;
-        padding: 10px;
+    border: 2px solid var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 10px;
     text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 .heading {
     margin-top: 0;
+    color: tomato;
 }
 
+
 .logo img {
-    width: 120px;
+    width: 100%;
+    max-width: 120px;
+    margin-bottom: 10px;
 }
 
 .content {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
+    flex-wrap: wrap;
 }
 
 .spanFlex {
@@ -37,10 +75,61 @@
     flex-direction: column;
     gap: 15px;
 }
+
 .spanFlex span {
     font-size: larger;
 }
 
 .btn {
-    padding: 0;
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+}
+
+@media (max-width: 1200px) {
+    .topText {
+        margin: 0 50px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contain {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .topText {
+        margin: 0 20px;
+    }
+    .contain {
+        width: 90%;
+    }
+    .logo img {
+        max-width: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    .topText {
+        margin: 0 10px;
+    }
+    .contain {
+        width: 95%;
+    }
+    .logo img {
+        max-width: 80px;
+    }
 }
