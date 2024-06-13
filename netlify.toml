@@ -1,4 +1,5 @@
 [[redirects]]
 from = "/*"
-to = "/eventUpdatePage.html"
+to = "/events-home-page.html"
 status = 200
+
